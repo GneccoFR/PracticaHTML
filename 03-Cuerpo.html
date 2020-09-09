@@ -34,30 +34,188 @@
 		<header>Encabezado</header>
 		<!--define el encabezado de la pagina. no confundir con la cabecera, que su funcion es pasar los datos principales que seran utilizados en el documento-->
 
+		<hr>
+		<!--define una linea divisora en la pagina-->
+
 		<nav>Barra de Navegación</nav>		
 		<!--define una barra de navegación-->
-
+		
+		<hr>
+		
 		<section>Sección</section>
 		<!--define una sección-->
+
+		<hr>
 
 		<aside>Columna</aside>
 		<!--define una columna-->
 
+		<hr>
+
 		<article>
-Este es un artículo que nos gustaria que sea largo pero no será asi a menos que me vaya por las ramas, como aquella vez que cante Envido en una partida de truco cuando quería preguntarle a mi compañero si tenía cartas para cantar el tanto.
+		Este es un artículo que nos gustaria que sea largo pero no será asi a menos que me vaya por las ramas, como aquella vez que cante Envido en una partida de truco cuando quería preguntarle a mi compañero si tenía cartas para cantar el tanto.
 		</article>
 		<!--define un artículo-->
 
-		<h1>Este es el título</h1>
+		<hr>
+
+		<h1>Este es el título 1</h1>
+		<h2>Este es el título 2</h2>
+		<h3>Este es el título 3</h3>
+		<h4>Este es el título 4</h4>
+		<h5>Este es el título 5</h5>
+		<h6>Este es el título 6</h6>
 		<!--define un titulo en el documento. se puede usar desde h1 hasta h6, siendo la diferencia el tamaño-->
 
+		<hr>
+
 		<p>
-Acá deberíamos tener un párrafo casi tan largo como el articulo, peo no será así porque esta vez sí que no me iré por las ramas, como aquella vez que buscando referencias para un personaje de una mesa de rol terminé encontrando una página con los combates de frases del Monkey Island.
+		<b>Acá deberíamos tener un párrafo casi tan largo como el articulo</b>, pero no será así porque esta vez sí que no me iré por las ramas,<br> como aquella vez que buscando referencias para un personaje de una mesa de rol terminé encontrando una página con los combates de frases del Monkey Island.
 		</p>
-		<!--define un parrafo-->
+		<!--"p" define un parrafo. "b" define "bold", o negrita. "br" define "break", o salto de línea.-->
+		
+		<hr>
 
-		</header>	
+		<a href="#">Vínculo</a>
+		<!--"a" define un hipervínculo. puede ser a otra pagina, documento, etc., siendo la ruta del vinculo especificada en el href-->
+		
+		<br>
 
+		<figure>
+		<!--define un marco para una imagen-->
+		<img src="img/RubyAdv.png">
+		<!--define una imagen, dada la ruta a esta en el parametro href-->
+		<figcaption>texto de referencia de una imagen</figcaption>
+		</figure>
+		
+
+
+		<br>
+
+		<ol>
+		<!--define una lista numericamente organizada de elementos-->
+		
+		<li>Character</li>
+		<!--define un elemnto de lista a ser listado en el ol-->
+		
+		<li>Player</li>
+		
+		<li>Enemy</li>
+		
+		<li>EnemySubtype</li>
+		
+		</ol>
+
+		<ul>
+		<!--define una lista no organizada de elementos-->
+		
+		<li>Character</li>
+		<!--define un elemnto de lista a ser listado en el ol-->
+		
+		<li>Player</li>
+		
+		<li>Enemy</li>
+		
+		<li>EnemySubtype</li>
+		
+		</ul>
+
+		<hr>
+
+		<table border="1">
+		<!--define una tabla. El parametro border le da bordes a la tabla. Se necesita de las etiquetas de columna y fila para armarla-->
+			
+			<thead>
+			<!--define el encabezado de una tabla-->
+
+				<tr>
+				<!--define una fila dentro de una tabla-->
+					<th>Health</th>
+					<!--define una columna dentro de una tabla-->
+
+					<th>Ammo</th>
+
+					<th>Speed</th>
+
+				</tr>
+
+			</thead>
+
+			<tbody>
+			<!--define el cuerpo de una tabla-->
+
+				<tr>
+					<td>5</td>
+					<!--cuado la tabla esta separada en cuerpo y encabezado, en lugar de th utilizados td-->
+					<td>15</td>
+					<td>15</td>
+				</tr>
+
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+				</tr>
+
+				<tr>
+					<td>15</td>
+					<td>7</td>
+					<td>5</td>
+				</tr>
+
+			<tbody>
+
+		</table>
+
+		<hr>
+
+		<h1>Accuracy rates</h1>	
+		<p>Player1: <meter value="98" min="0" max="100" high="90"><p>
+		<p>Player2: <meter value="86" min="0" max="100" high="90"><p>
+		<p>Player3: <meter value="93" min="0" max="100" high="90"><p>
+		<p>Player4: <meter value="51" min="0" max="100" high="90"><p>
+
+		<h1>Healing rates</h1>
+		<p>Player1<progress value="73" min="0" max="100"></progress></p>
+		<p>Player2<progress value="82" min="0" max="100"></progress></p>
+		<p>Player3<progress value="91" min="0" max="100"></progress></p>
+		<p>Player4<progress value="25" min="0" max="100"></progress></p>
+
+		<audio controls loop preload="auto">
+		<!--define un reproductor de audio, pasando como parametros los componentes que este va a tener, y debe incluirse en etiquetas separadas los archivos que va a reproducir-->
+
+		<!--los formatos de audio para ulizar mas comunes son:-->
+		<!--ogg VORBIS .ogg-->
+		<!--mp3 .mp3-->
+		<!--WAV .wav-->
+		<!--ACC .m4a, .m4b, .m4p, .mp4, .acc-->
+
+			<source src="audio/2D MUSIC LOOP.ogg" type="audio/ogg">
+			<source src="audio/2D MUSIC LOOP.wav" type="audio/wav">
+			<source src="audio/2D MUSIC LOOP.mp3" type="audio/mp3">
+
+		</audio>
+
+		<video controls loop width="500" height="200">
+
+		<!--THEORA OGG .ogv-->
+		<!--MP4 .mp4-->
+		<!--WEBM .webm-->
+
+			<source src="video/video.mp4" type="video/mp4">
+			<source src="video/video.ogv" type="video/ogg"	>
+			<source src="video/video.webm" type="video/webm">
+
+		</video>
+
+		<iframe width="500" height="280" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+		<iframe width="1280" height="720" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<!--iframe define un elemento multimedia traído desde otro sitio, pudiendo ser videos de youtube, vimeo, sonido de soundcloud, etc. para buscar el vinculo, en cada sitio buscar la opcion "embed code"-->
+		<!--tambien pueden ser insertados documentos pdf, mapas de google con direcciones específicas y hasta otras paginas web-->
+
+		<footer>Y finalmente, esto es el pie de pagina. se estaba haciendo largo, no? Bueno, seguí porque todavia te falta.</footer>
 
 	</body>
 

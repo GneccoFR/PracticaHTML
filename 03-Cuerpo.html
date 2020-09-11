@@ -31,8 +31,100 @@
 	<body>
 	<!--es el cuerpo y parte visible del documento-->
 		
-		<header>Encabezado</header>
+		<header>
 		<!--define el encabezado de la pagina. no confundir con la cabecera, que su funcion es pasar los datos principales que seran utilizados en el documento-->
+
+		<center>
+		<!--centra los componentes que esten adentro de la sentencia-->
+
+		Encabezado
+		
+		<div id="logotipo">Logotipo</div>
+		<!--define una división. se les puede asignar id's o clasificadores para luego poder trabajarlos con CSS-->
+
+		</center>
+		</header>
+		
+		<hr>
+
+		<form>
+		<!--define formulario. se utiliza para enmarcar las entradas y salidas de datos de los usuarios-->
+			<center>
+			
+			<b>Formulario</b>
+			
+			<br>
+			<br>
+
+			<label for="text">Entrada de texto</label>
+			<!--"label nos permite hacer un texto indicativo sobre algun elemento. 
+			A traves de la propiedad for=(ID) al hacer click sobre el texto dirigira la accion al elemento designado con el id dado."-->
+
+			<input id="text" type="text" placeholder="Entrada de texto" value="">
+			<!--"input" define una entrada de dato, que puede ser de varios tipos (boton, texto, etc). 
+			"placeholder" es el texto de guia que aparece de fondo en un campo de entrada de texto.
+			"value" es el parametro que almacena el valor que está adentro del campo. si se define en el código, el campo aparecerá con el valor ya escrito en él.
+			El atributo "readonly" hace que el campo no sea interactuable por el usuario.-->
+			
+			<br>
+			<br>
+
+			<label for="mail">Dirección de Correo</label>
+			<input id="mail" type="email" placeholder="E-Mail" value="" required>
+
+			<br>
+			<br>
+
+			<label for="pass">Contraseña</label>
+			<input id="pass" type="password" value="">
+
+			<br>
+			<br>
+
+			<input type="number" value="10" min="0" max="30">
+			<!--la propiedad "value" en esta etiqueta nos designa el valor inicial del numero, el cual luego podemos cambiar. las propiedades "min" y "max" establecen minimos y maximos para los valores que pueden ingresarse.-->
+
+			<br>
+			<br>
+
+			<select>
+			<!--"select" define una lista de opciones escogibles, dadas a traves de la etiqueta "option" dentro de su estructura.-->	
+				
+				<option>Barbarian</option>
+				
+				<option>Mage</option>
+				
+				<option>Paladin</option>
+				
+				<option>Rogue</option>
+
+			</select>
+
+			<br>
+			<br>
+
+			<label id="gameMode">Hardcore Mode</label>
+			<input id="gameMode" type="checkbox" >
+
+			<br>
+			<br>
+
+			<label name="horda">Horda</label>
+			<input id="horda" name="bando" type="radio" checked>
+
+			<label name="ali">Alianza</label>
+			<input id="ali" name="bando" type="radio">
+
+			<br>
+			<br>
+			
+			<input type="submit" value="Enviar">
+
+			<br>
+			<br>
+
+			</center>
+		</form>
 
 		<hr>
 		<!--define una linea divisora en la pagina-->
@@ -47,7 +139,16 @@
 
 		<hr>
 
-		<aside>Columna</aside>
+		<aside>
+		
+		Columna
+		
+		<div class="noticia">Noticia1</div>
+		<div class="noticia">Noticia2</div>
+		<div class="noticia">Noticia3</div>
+		<div class="noticia">Noticia4</div>
+
+		</aside>
 		<!--define una columna-->
 
 		<hr>

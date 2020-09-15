@@ -1,0 +1,323 @@
+<!doctype html>
+<!--informamos al servidor que este es un archivo de html. esta etiqueta no necesita cierre.-->
+
+<html>
+<!--dentro de la etiqueta html escribimos nuestro codigo-->
+
+	<head>
+	<!--Head define la cabecera del documento. tambien contiene informacion del documento, como metadatos, scripts, estilos, ubicacion de dcumentos de estilo, titulo de la pagina, etc-->
+
+		<meta charset="utf-8">
+		<!--La etiqueta "meta" sirve para drle informacion de metadatosal servidor sobre las cosas que incluye la página. en este caso, charset define el tipo de caracteres que incluiremos en nuestro documento. utf-8 es el codigo para la lista de caracteres usados en el lenguje español.-->
+
+		<meta name="author" content="Fabián">
+		<!--se define al autor de la pagina con el valor dado a traves de content-->
+
+		<meta name="description" content="Tutorial de HTML">
+		<!--se define la descripcion de la pagina con el valor ingresado a traves de content-->
+
+		<meta name="keywords" content="tutoriales, html, desarrollo web">
+		<!--se definen las palabras clave que van a ser mostradas al buscador-->
+
+		<title>Estructura del cuerpo</title>
+		<!--se define el titulo de la pagina-->
+
+		<link rel="icon" href="img/icon.png">
+		<!--se define el icono de la pagina a mostrar en la estaña del buscador-->
+
+	</head>
+	
+
+	<body>
+	<!--es el cuerpo y parte visible del documento-->
+		
+		<header>
+		<!--define el encabezado de la pagina. no confundir con la cabecera, que su funcion es pasar los datos principales que seran utilizados en el documento-->
+
+		<center>
+		<!--centra los componentes que esten adentro de la sentencia-->
+
+		Encabezado
+		
+		<div id="logotipo">Logotipo</div>
+		<!--define una división. se les puede asignar id's o clasificadores para luego poder trabajarlos con CSS-->
+
+		</center>
+		</header>
+		
+		<hr>
+
+		<form>
+		<!--define formulario. se utiliza para enmarcar las entradas y salidas de datos de los usuarios-->
+			<center>
+			
+			<b>Formulario</b>
+			
+			<br>
+			<br>
+
+			<label for="text">Entrada de texto</label>
+			<!--"label nos permite hacer un texto indicativo sobre algun elemento. 
+			A traves de la propiedad for=(ID) al hacer click sobre el texto dirigira la accion al elemento designado con el id dado."-->
+
+			<input id="text" type="text" placeholder="Entrada de texto" value="">
+			<!--"input" define una entrada de dato, que puede ser de varios tipos (boton, texto, etc). 
+			"placeholder" es el texto de guia que aparece de fondo en un campo de entrada de texto.
+			"value" es el parametro que almacena el valor que está adentro del campo. si se define en el código, el campo aparecerá con el valor ya escrito en él.
+			El atributo "readonly" hace que el campo no sea interactuable por el usuario.-->
+			
+			<br>
+			<br>
+
+			<label for="mail">Dirección de Correo</label>
+			<input id="mail" type="email" placeholder="E-Mail" value="" required>
+
+			<br>
+			<br>
+
+			<label for="pass">Contraseña</label>
+			<input id="pass" type="password" value="">
+
+			<br>
+			<br>
+
+			<input type="number" value="10" min="0" max="30">
+			<!--la propiedad "value" en esta etiqueta nos designa el valor inicial del numero, el cual luego podemos cambiar. las propiedades "min" y "max" establecen minimos y maximos para los valores que pueden ingresarse.-->
+
+			<br>
+			<br>
+
+			<select>
+			<!--"select" define una lista de opciones escogibles, dadas a traves de la etiqueta "option" dentro de su estructura.-->	
+				
+				<option>Barbarian</option>
+				
+				<option>Mage</option>
+				
+				<option>Paladin</option>
+				
+				<option>Rogue</option>
+
+			</select>
+
+			<br>
+			<br>
+
+			<label id="gameMode">Hardcore Mode</label>
+			<input id="gameMode" type="checkbox" >
+
+			<br>
+			<br>
+
+			<label name="horda">Horda</label>
+			<input id="horda" name="bando" type="radio" checked>
+
+			<label name="ali">Alianza</label>
+			<input id="ali" name="bando" type="radio">
+
+			<br>
+			<br>
+			
+			<input type="submit" value="Enviar">
+
+			<br>
+			<br>
+
+			</center>
+		</form>
+
+		<hr>
+		<!--define una linea divisora en la pagina-->
+
+		<nav>Barra de Navegación</nav>		
+		<!--define una barra de navegación-->
+		
+		<hr>
+		
+		<section>Sección</section>
+		<!--define una sección-->
+
+		<hr>
+
+		<aside>
+		
+		Columna
+		
+		<div class="noticia">Noticia1</div>
+		<div class="noticia">Noticia2</div>
+		<div class="noticia">Noticia3</div>
+		<div class="noticia">Noticia4</div>
+
+		</aside>
+		<!--define una columna-->
+
+		<hr>
+
+		<article>
+		Este es un artículo que nos gustaria que sea largo pero no será asi a menos que me vaya por las ramas, como aquella vez que cante Envido en una partida de truco cuando quería preguntarle a mi compañero si tenía cartas para cantar el tanto.
+		</article>
+		<!--define un artículo-->
+
+		<hr>
+
+		<h1>Este es el título 1</h1>
+		<h2>Este es el título 2</h2>
+		<h3>Este es el título 3</h3>
+		<h4>Este es el título 4</h4>
+		<h5>Este es el título 5</h5>
+		<h6>Este es el título 6</h6>
+		<!--define un titulo en el documento. se puede usar desde h1 hasta h6, siendo la diferencia el tamaño-->
+
+		<hr>
+
+		<p>
+		<b>Acá deberíamos tener un párrafo casi tan largo como el articulo</b>, pero no será así porque esta vez sí que no me iré por las ramas,<br> como aquella vez que buscando referencias para un personaje de una mesa de rol terminé encontrando una página con los combates de frases del Monkey Island.
+		</p>
+		<!--"p" define un parrafo. "b" define "bold", o negrita. "br" define "break", o salto de línea.-->
+		
+		<hr>
+
+		<a href="#">Vínculo</a>
+		<!--"a" define un hipervínculo. puede ser a otra pagina, documento, etc., siendo la ruta del vinculo especificada en el href-->
+		
+		<br>
+
+		<figure>
+		<!--define un marco para una imagen-->
+		<img src="img/RubyAdv.png">
+		<!--define una imagen, dada la ruta a esta en el parametro href-->
+		<figcaption>texto de referencia de una imagen</figcaption>
+		</figure>
+		
+
+
+		<br>
+
+		<ol>
+		<!--define una lista numericamente organizada de elementos-->
+		
+		<li>Character</li>
+		<!--define un elemnto de lista a ser listado en el ol-->
+		
+		<li>Player</li>
+		
+		<li>Enemy</li>
+		
+		<li>EnemySubtype</li>
+		
+		</ol>
+
+		<ul>
+		<!--define una lista no organizada de elementos-->
+		
+		<li>Character</li>
+		<!--define un elemnto de lista a ser listado en el ol-->
+		
+		<li>Player</li>
+		
+		<li>Enemy</li>
+		
+		<li>EnemySubtype</li>
+		
+		</ul>
+
+		<hr>
+
+		<table border="1">
+		<!--define una tabla. El parametro border le da bordes a la tabla. Se necesita de las etiquetas de columna y fila para armarla-->
+			
+			<thead>
+			<!--define el encabezado de una tabla-->
+
+				<tr>
+				<!--define una fila dentro de una tabla-->
+					<th>Health</th>
+					<!--define una columna dentro de una tabla-->
+
+					<th>Ammo</th>
+
+					<th>Speed</th>
+
+				</tr>
+
+			</thead>
+
+			<tbody>
+			<!--define el cuerpo de una tabla-->
+
+				<tr>
+					<td>5</td>
+					<!--cuado la tabla esta separada en cuerpo y encabezado, en lugar de th utilizados td-->
+					<td>15</td>
+					<td>15</td>
+				</tr>
+
+				<tr>
+					<td>10</td>
+					<td>10</td>
+					<td>10</td>
+				</tr>
+
+				<tr>
+					<td>15</td>
+					<td>7</td>
+					<td>5</td>
+				</tr>
+
+			<tbody>
+
+		</table>
+
+		<hr>
+
+		<h1>Accuracy rates</h1>	
+		<p>Player1: <meter value="98" min="0" max="100" high="90"><p>
+		<p>Player2: <meter value="86" min="0" max="100" high="90"><p>
+		<p>Player3: <meter value="93" min="0" max="100" high="90"><p>
+		<p>Player4: <meter value="51" min="0" max="100" high="90"><p>
+
+		<h1>Healing rates</h1>
+		<p>Player1<progress value="73" min="0" max="100"></progress></p>
+		<p>Player2<progress value="82" min="0" max="100"></progress></p>
+		<p>Player3<progress value="91" min="0" max="100"></progress></p>
+		<p>Player4<progress value="25" min="0" max="100"></progress></p>
+
+		<audio controls loop preload="auto">
+		<!--define un reproductor de audio, pasando como parametros los componentes que este va a tener, y debe incluirse en etiquetas separadas los archivos que va a reproducir-->
+
+		<!--los formatos de audio para ulizar mas comunes son:-->
+		<!--ogg VORBIS .ogg-->
+		<!--mp3 .mp3-->
+		<!--WAV .wav-->
+		<!--ACC .m4a, .m4b, .m4p, .mp4, .acc-->
+
+			<source src="audio/2D MUSIC LOOP.ogg" type="audio/ogg">
+			<source src="audio/2D MUSIC LOOP.wav" type="audio/wav">
+			<source src="audio/2D MUSIC LOOP.mp3" type="audio/mp3">
+
+		</audio>
+
+		<video controls loop width="500" height="200">
+
+		<!--THEORA OGG .ogv-->
+		<!--MP4 .mp4-->
+		<!--WEBM .webm-->
+
+			<source src="video/video.mp4" type="video/mp4">
+			<source src="video/video.ogv" type="video/ogg"	>
+			<source src="video/video.webm" type="video/webm">
+
+		</video>
+
+		<iframe width="500" height="280" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+
+		<iframe width="1280" height="720" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		<!--iframe define un elemento multimedia traído desde otro sitio, pudiendo ser videos de youtube, vimeo, sonido de soundcloud, etc. para buscar el vinculo, en cada sitio buscar la opcion "embed code"-->
+		<!--tambien pueden ser insertados documentos pdf, mapas de google con direcciones específicas y hasta otras paginas web-->
+
+		<footer>Y finalmente, esto es el pie de pagina. se estaba haciendo largo, no? Bueno, seguí porque todavia te falta.</footer>
+
+	</body>
+
+</html>

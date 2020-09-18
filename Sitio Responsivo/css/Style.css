@@ -1,4 +1,4 @@
-﻿/*Global*/
+﻿ /*Global*/
 * {
     margin: 0;
     padding: 0;
@@ -26,10 +26,51 @@
 
 [class*="col-"] {
     float: left;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     padding: 10px;
 }
 
+/*Header section*/
+    header #logo {
+    font-family: 'Ranchers';
+    font-size:50px;
+    text-align:center;
+    line-height:60px;
+}
+
+header .icon-box {
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 42px;
+    color:white;
+}
+
+header #ig {
+    background:purple;
+}
+
+header #fb {
+    background:blue;
+}
+
+header #tw {
+    background: lightblue;
+}
+
+/*Navigation Bar section*/
+
+
+
+
+/*Upper Panel section*/
+
+/*Article section*/
+
+/*Footer section*/
+
+/*@media queries*/
 /*large display*/
 @media(min-width:1200px) {
 
@@ -49,12 +90,20 @@
         width: 33.33333333%;
     }
 
+    .col-lg-3 {
+        width: 25%;
+    }
+
     .col-lg-2 {
         width: 16.66666666%;
     }
 
     .col-lg-1 {
         width: 8.33333333%;
+    }
+
+    .col-lg-0 {
+        display:none;
     }
 }
 
@@ -77,12 +126,20 @@
         width: 33.33333333%;
     }
 
+    .col-md-3 {
+        width: 25%;
+    }
+
     .col-md-2 {
         width: 16.66666666%;
     }
 
     .col-md-1 {
         width: 8.33333333%;
+    }
+
+    .col-md-0 {
+        display: none;
     }
 }
 
@@ -105,12 +162,20 @@
         width: 33.33333333%;
     }
 
+    .col-sm-3 {
+        width: 25%;
+    }
+
     .col-sm-2 {
         width: 16.66666666%;
     }
 
     .col-sm-1 {
         width: 8.33333333%;
+    }
+
+    .col-sm-0 {
+        display: none;
     }
 }
 
@@ -133,11 +198,19 @@
         width: 33.33333333%;
     }
 
+    .col-xs-3 {
+        width: 25%;
+    }
+
     .col-xs-2 {
         width: 16.66666666%;
     }
 
     .col-xs-1 {
         width: 8.33333333%;
+    }
+
+    .col-xs-0 {
+        display: none;
     }
 }

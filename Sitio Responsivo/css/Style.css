@@ -82,6 +82,26 @@ nav ul li a:active {
 }
 
 /*Upper Panel section*/
+#panelSection center {
+    padding:20px;
+}
+
+#panelSection img {
+    border-radius:100%;
+    width:200px;
+    height:200px;
+    padding:10px;
+}
+
+#panelSection h1 {
+    font-family: 'Ranchers';
+    font-size:40px;
+    padding:10px;
+}
+
+#panelSection p {
+    padding:10px;
+}
 
 /*Article section*/
 

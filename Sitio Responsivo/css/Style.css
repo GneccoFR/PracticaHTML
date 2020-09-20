@@ -60,9 +60,26 @@ header #tw {
 }
 
 /*Navigation Bar section*/
+nav ul li {
+    padding:10px;
+    text-align:center;
+}
 
+nav ul li a {
+    display:block;
+    background:rgba(100,0,255,1);
+    font-family: 'Ranchers', cursive;
+    color:white;
+    line-height:48px;
+}
 
+nav ul li a:hover {
+    background:rgba(100,0,255,.4);
+}
 
+nav ul li a:active {
+    background:rgba(255,0,100,1);
+}
 
 /*Upper Panel section*/
 
